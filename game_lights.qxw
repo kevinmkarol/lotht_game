@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.3a</Version>
+  <Author>Nicholas LaGrow</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0" Passthrough="False">
+    <Input Plugin="OSC" Line="0" Profile="None"/>
+    <Output Plugin="DMX USB" Line="0">
+     <PluginParameters UniverseChannels="32"/>
+    </Output>
+   </Universe>
+   <Universe Name="Universe 2" ID="1" Passthrough="False"/>
+   <Universe Name="Universe 3" ID="2" Passthrough="False"/>
+   <Universe Name="Universe 4" ID="3" Passthrough="False"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>0</ID>
+   <Name>Can #1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>1</ID>
+   <Name>Can #2</Name>
+   <Universe>0</Universe>
+   <Address>4</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>2</ID>
+   <Name>Can #3</Name>
+   <Universe>0</Universe>
+   <Address>8</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>3</ID>
+   <Name>Can #4</Name>
+   <Universe>0</Universe>
+   <Address>12</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>4</ID>
+   <Name>Can #5</Name>
+   <Universe>0</Universe>
+   <Address>16</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>5</ID>
+   <Name>Can #6</Name>
+   <Universe>0</Universe>
+   <Address>20</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>6</ID>
+   <Name>Can #7</Name>
+   <Universe>0</Universe>
+   <Address>24</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>7</ID>
+   <Name>Can #8</Name>
+   <Universe>0</Universe>
+   <Address>28</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Function ID="0" Type="Scene" Name="f1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,255,3,255</FixtureVal>
+  </Function>
+  <Function ID="1" Type="Scene" Name="game_intro_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="7"/>
+   <FixtureVal ID="6"/>
+   <FixtureVal ID="5"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="0"/>
+  </Function>
+  <Function ID="2" Type="Scene" Name="game_intro_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="7"/>
+   <FixtureVal ID="6"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="2"/>
+  </Function>
+  <Function ID="3" Type="Scene" Name="Booth Default 1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,20,1,0,2,130,3,220</FixtureVal>
+   <FixtureVal ID="1">0,30,1,188,2,227,3,18</FixtureVal>
+   <FixtureVal ID="2">0,30,1,67,2,84,3,57</FixtureVal>
+   <FixtureVal ID="3">0,30,1,255,2,255,3,13</FixtureVal>
+   <FixtureVal ID="7"/>
+   <FixtureVal ID="6"/>
+   <FixtureVal ID="5"/>
+   <FixtureVal ID="4"/>
+  </Function>
+  <Function ID="4" Type="Scene" Name="f2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="5" Type="Scene" Name="Booth Default 2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,30,1,0,2,241,3,52</FixtureVal>
+   <FixtureVal ID="1">0,30,1,242,2,0,3,119</FixtureVal>
+   <FixtureVal ID="2">0,30,1,84,2,58,3,0</FixtureVal>
+   <FixtureVal ID="3">0,30,1,133,2,0,3,192</FixtureVal>
+   <FixtureVal ID="7"/>
+   <FixtureVal ID="6"/>
+   <FixtureVal ID="5"/>
+   <FixtureVal ID="4"/>
+  </Function>
+  <Function ID="6" Type="Scene" Name="f3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,127,1,255,2,255,3,255</FixtureVal>
+  </Function>
+  <Function ID="7" Type="Chaser" Name=" default Lights">
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="10000" Hold="0" FadeOut="10000">5</Step>
+  </Function>
+  <Function ID="8" Type="Scene" Name="countdown_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="1">0,127,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="2">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="3">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="4">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="5">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="7"/>
+   <FixtureVal ID="6"/>
+  </Function>
+  <Function ID="9" Type="Scene" Name="f4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,127,1,255,2,255,3,255</FixtureVal>
+  </Function>
+  <Function ID="10" Type="Scene" Name="f5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="11" Type="Scene" Name="f6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="5">0,127,1,255,2,255,3,255</FixtureVal>
+  </Function>
+  <Function ID="12" Type="Scene" Name="f7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="13" Type="Scene" Name="f8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,127,1,255,2,255,3,255</FixtureVal>
+  </Function>
+  <Function ID="14" Type="Chaser" Name="light test">
+   <Speed FadeIn="0" FadeOut="0" Duration="4000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
+   <Step Number="0" FadeIn="2000" Hold="0" FadeOut="2000">0</Step>
+   <Step Number="1" FadeIn="2000" Hold="0" FadeOut="2000">4</Step>
+   <Step Number="2" FadeIn="2000" Hold="0" FadeOut="2000">6</Step>
+   <Step Number="3" FadeIn="2000" Hold="0" FadeOut="2000">9</Step>
+   <Step Number="4" FadeIn="2000" Hold="0" FadeOut="2000">10</Step>
+   <Step Number="5" FadeIn="2000" Hold="0" FadeOut="2000">11</Step>
+   <Step Number="6" FadeIn="2000" Hold="0" FadeOut="2000">12</Step>
+   <Step Number="7" FadeIn="2000" Hold="0" FadeOut="2000">13</Step>
+  </Function>
+  <Function ID="15" Type="Chaser" Name="New Sequence 15">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Sequence BoundScene="12"/>
+  </Function>
+  <Function ID="16" Type="Show" Name="game">
+   <TimeDivision Type="Time" BPM="120"/>
+   <Track ID="0" Name="game_intro_1" SceneID="19" isMute="0"/>
+   <Track ID="1" Name="game_intro_2" SceneID="20" isMute="0"/>
+  </Function>
+  <Function ID="17" Type="Chaser" Name="New Sequence 17">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Sequence BoundScene="4"/>
+   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="4">1,0,127,1,1,255,1,2,255,1,3,255</Step>
+  </Function>
+  <Function ID="18" Type="Chaser" Name="New Sequence 18">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Sequence BoundScene="10"/>
+   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="4">4,0,127,4,1,255,4,2,255,4,3,255</Step>
+  </Function>
+  <Function ID="19" Type="Scene" Name="game_intro_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="7"/>
+   <FixtureVal ID="6"/>
+   <FixtureVal ID="4"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="1"/>
+  </Function>
+  <Function ID="20" Type="Scene" Name="game_intro_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4294967295"/>
+   <FixtureVal ID="7"/>
+   <FixtureVal ID="6"/>
+   <FixtureVal ID="5"/>
+   <FixtureVal ID="4"/>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="0"/>
+  </Function>
+  <Function ID="21" Type="Scene" Name="countdown_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="1">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="2">0,127,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="3">0,127,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="4">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="5">0,127,1,0,2,0,3,255</FixtureVal>
+  </Function>
+  <Function ID="22" Type="Scene" Name="countdown_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="1">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="2">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="3">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="4">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="5">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="6">0,127,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="7">0,127,1,0,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="23" Type="Scene" Name="countdown_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="1">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="2">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="3">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="4">0,127,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,0,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="24" Type="Chaser" Name="countdown">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="1000" Hold="500" FadeOut="0">34</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">8</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0">21</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0">23</Step>
+   <Step Number="4" FadeIn="0" Hold="500" FadeOut="0">22</Step>
+  </Function>
+  <Function ID="25" Type="Scene" Name="alt_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,127,1,0,2,255,3,255</FixtureVal>
+   <FixtureVal ID="4">0,127,1,251,2,40,3,255</FixtureVal>
+  </Function>
+  <Function ID="26" Type="Scene" Name="alt_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,255</FixtureVal>
+   <FixtureVal ID="5">0,127,1,114,2,236,3,80</FixtureVal>
+  </Function>
+  <Function ID="27" Type="Chaser" Name="alt_5_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
+   <Step Number="0" FadeIn="1000" Hold="0" FadeOut="1000">25</Step>
+   <Step Number="1" FadeIn="1000" Hold="0" FadeOut="1000">26</Step>
+   <Step Number="2" FadeIn="1000" Hold="0" FadeOut="1000">25</Step>
+   <Step Number="3" FadeIn="1000" Hold="0" FadeOut="1000">26</Step>
+   <Step Number="4" FadeIn="1000" Hold="0" FadeOut="1000">25</Step>
+   <Step Number="5" FadeIn="1000" Hold="0" FadeOut="1000">26</Step>
+   <Step Number="6" FadeIn="1000" Hold="0" FadeOut="1000">25</Step>
+   <Step Number="7" FadeIn="1000" Hold="0" FadeOut="1000">26</Step>
+   <Step Number="8" FadeIn="1000" Hold="0" FadeOut="1000">25</Step>
+   <Step Number="9" FadeIn="1000" Hold="0" FadeOut="1000">26</Step>
+   <Step Number="10" FadeIn="1000" Hold="0" FadeOut="1000">25</Step>
+  </Function>
+  <Function ID="28" Type="Chaser" Name="intro_middle_fade">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="1000">19</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="1000">20</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="1000">1</Step>
+   <Step Number="3" FadeIn="1000" Hold="0" FadeOut="0">2</Step>
+  </Function>
+  <Function ID="32" Type="Chaser" Name="sync_1_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
+  </Function>
+  <Function ID="34" Type="Scene" Name="countdown_0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="1">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="2">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="3">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="4">0,127,1,0,2,0,3,255</FixtureVal>
+   <FixtureVal ID="5">0,127,1,0,2,0,3,255</FixtureVal>
+  </Function>
+  <Function ID="35" Type="Scene" Name="playing_scene_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,127,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="7">0,127,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="5"/>
+   <FixtureVal ID="4"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="0"/>
+  </Function>
+  <Function ID="36" Type="Scene" Name="playing_scene_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,50,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="7">0,50,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="5"/>
+   <FixtureVal ID="4"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="0"/>
+  </Function>
+  <Function ID="37" Type="Chaser" Name="playing_pop">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="2000" Hold="0" FadeOut="2000">35</Step>
+   <Step Number="1" FadeIn="2000" Hold="0" FadeOut="5000">36</Step>
+   <Step Number="2" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="3" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+   <Step Number="4" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="5" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+   <Step Number="6" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="7" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+   <Step Number="8" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="9" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+   <Step Number="10" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="11" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+   <Step Number="12" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="13" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+   <Step Number="14" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="15" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+   <Step Number="16" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="17" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+   <Step Number="18" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="19" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+   <Step Number="20" FadeIn="1000" Hold="0" FadeOut="1000">35</Step>
+   <Step Number="21" FadeIn="1000" Hold="0" FadeOut="1000">36</Step>
+  </Function>
+  <Function ID="38" Type="Scene" Name="environmental_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,127,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="4">0,127,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="5"/>
+   <FixtureVal ID="3"/>
+  </Function>
+  <Function ID="39" Type="Scene" Name="environmental_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,127,1,0,2,255,3,255</FixtureVal>
+   <FixtureVal ID="3">0,127,1,0,2,255,3,255</FixtureVal>
+   <FixtureVal ID="5">0,127,1,0,2,255,3,255</FixtureVal>
+   <FixtureVal ID="4"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="0"/>
+  </Function>
+  <Function ID="40" Type="Scene" Name="environmental_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4294967295"/>
+   <FixtureVal ID="5"/>
+   <FixtureVal ID="4"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="2"/>
+   <FixtureVal ID="1"/>
+   <FixtureVal ID="0"/>
+  </Function>
+  <Function ID="41" Type="Chaser" Name="environmental">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">38</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">39</Step>
+   <Step Number="2" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="3" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+   <Step Number="4" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="5" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+   <Step Number="6" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="7" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+   <Step Number="8" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="9" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+   <Step Number="10" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="11" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+   <Step Number="12" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="13" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+   <Step Number="14" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="15" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+   <Step Number="16" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="17" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+   <Step Number="18" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="19" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+   <Step Number="20" FadeIn="1000" Hold="0" FadeOut="1000">38</Step>
+   <Step Number="21" FadeIn="1000" Hold="0" FadeOut="1000">39</Step>
+  </Function>
+  <Function ID="42" Type="Scene" Name="pop_low">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,50,2,50,3,0</FixtureVal>
+   <FixtureVal ID="1">0,127,1,50,2,50,3,0</FixtureVal>
+   <FixtureVal ID="2">0,127,1,50,2,50,3,0</FixtureVal>
+   <FixtureVal ID="3">0,127,1,50,2,50,3,0</FixtureVal>
+   <FixtureVal ID="4">0,127,1,50,2,50,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,50,2,50,3,0</FixtureVal>
+  </Function>
+  <Function ID="43" Type="Scene" Name="pop_high_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,70,2,200,3,200</FixtureVal>
+   <FixtureVal ID="1">0,127,1,70,2,200,3,200</FixtureVal>
+   <FixtureVal ID="2">0,127,1,70,2,200,3,200</FixtureVal>
+   <FixtureVal ID="3">0,127,1,50,2,200,3,200</FixtureVal>
+   <FixtureVal ID="4">0,127,1,50,2,200,3,200</FixtureVal>
+   <FixtureVal ID="5">0,127,1,50,2,200,3,200</FixtureVal>
+  </Function>
+  <Function ID="44" Type="Scene" Name="pop_high_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,200,2,0,3,200</FixtureVal>
+   <FixtureVal ID="1">0,127,1,200,2,0,3,200</FixtureVal>
+   <FixtureVal ID="2">0,127,1,200,2,0,3,200</FixtureVal>
+   <FixtureVal ID="3">0,127,1,200,2,0,3,200</FixtureVal>
+   <FixtureVal ID="4">0,127,1,200,2,0,3,200</FixtureVal>
+   <FixtureVal ID="5">0,127,1,200,2,0,3,200</FixtureVal>
+  </Function>
+  <Function ID="45" Type="Chaser" Name="intensity_pump">
+   <Speed FadeIn="500" FadeOut="500" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">42</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">43</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">42</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">44</Step>
+   <Step Number="4" FadeIn="500" Hold="0" FadeOut="500">42</Step>
+   <Step Number="5" FadeIn="500" Hold="0" FadeOut="500">43</Step>
+   <Step Number="6" FadeIn="500" Hold="0" FadeOut="500">42</Step>
+   <Step Number="7" FadeIn="500" Hold="0" FadeOut="500">44</Step>
+   <Step Number="8" FadeIn="500" Hold="0" FadeOut="500">42</Step>
+   <Step Number="9" FadeIn="500" Hold="0" FadeOut="500">43</Step>
+   <Step Number="10" FadeIn="500" Hold="0" FadeOut="500">42</Step>
+   <Step Number="11" FadeIn="500" Hold="0" FadeOut="500">44</Step>
+   <Step Number="12" FadeIn="500" Hold="0" FadeOut="500">42</Step>
+   <Step Number="13" FadeIn="500" Hold="0" FadeOut="500">43</Step>
+   <Step Number="14" FadeIn="500" Hold="0" FadeOut="500">42</Step>
+   <Step Number="15" FadeIn="500" Hold="0" FadeOut="500">44</Step>
+   <Step Number="16" FadeIn="500" Hold="0" FadeOut="500">42</Step>
+   <Step Number="17" FadeIn="500" Hold="0" FadeOut="500">43</Step>
+   <Step Number="18" FadeIn="500" Hold="0" FadeOut="500">42</Step>
+   <Step Number="19" FadeIn="500" Hold="0" FadeOut="500">44</Step>
+   <Step Number="20" FadeIn="500" Hold="0" FadeOut="500">42</Step>
+   <Step Number="21" FadeIn="500" Hold="0" FadeOut="500">43</Step>
+  </Function>
+  <Function ID="46" Type="Scene" Name="front_saturation_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,127,1,200,2,0,3,0</FixtureVal>
+   <FixtureVal ID="7">0,127,1,200,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="47" Type="Scene" Name="front_saturation_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,127,1,0,2,255,3,255</FixtureVal>
+   <FixtureVal ID="7">0,127,1,0,2,255,3,255</FixtureVal>
+  </Function>
+  <Function ID="48" Type="Scene" Name="front_saturation_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,127,1,255,2,0,3,255</FixtureVal>
+   <FixtureVal ID="7">0,127,1,255,2,0,3,255</FixtureVal>
+  </Function>
+  <Function ID="49" Type="Chaser" Name="front_saturation">
+   <Speed FadeIn="2000" FadeOut="2000" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">46</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">47</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">48</Step>
+   <Step Number="3" FadeIn="2000" Hold="0" FadeOut="2000">46</Step>
+   <Step Number="4" FadeIn="2000" Hold="0" FadeOut="2000">47</Step>
+   <Step Number="5" FadeIn="2000" Hold="0" FadeOut="2000">48</Step>
+  </Function>
+  <Function ID="50" Type="Scene" Name="circle_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,10,1,94,2,255,3,157</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,10,1,100,2,200,3,100</FixtureVal>
+   <FixtureVal ID="4">0,10,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,10,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="51" Type="Scene" Name="">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="4294967295"/>
+  </Function>
+  <Function ID="52" Type="Scene" Name="circle_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,10,1,0,2,200,3,90</FixtureVal>
+   <FixtureVal ID="1">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,10,1,100,2,200,3,100</FixtureVal>
+   <FixtureVal ID="4">0,10,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,10,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="53" Type="Scene" Name="circle_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,10,1,0,2,200,3,90</FixtureVal>
+   <FixtureVal ID="1">0,10,1,94,2,255,3,157</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,10,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,10,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="54" Type="Scene" Name="circle_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,10,1,0,2,200,3,90</FixtureVal>
+   <FixtureVal ID="1">0,10,1,94,2,255,3,157</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,10,1,100,2,200,3,100</FixtureVal>
+   <FixtureVal ID="4">0,10,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,255,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="55" Type="Scene" Name="circle_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,10,1,0,2,200,3,90</FixtureVal>
+   <FixtureVal ID="1">0,10,1,94,2,255,3,157</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,10,1,100,2,200,3,100</FixtureVal>
+   <FixtureVal ID="4">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="5">0,10,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="56" Type="Scene" Name="circle_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,10,1,0,2,200,3,90</FixtureVal>
+   <FixtureVal ID="1">0,10,1,94,2,255,3,157</FixtureVal>
+   <FixtureVal ID="2">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,10,1,100,2,200,3,100</FixtureVal>
+   <FixtureVal ID="4">0,10,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,10,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="57" Type="Chaser" Name="circle">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">50</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">52</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">53</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">54</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">55</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">56</Step>
+  </Function>
+  <Function ID="58" Type="Scene" Name="batch_circle">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,127,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,127,1,100,2,200,3,100</FixtureVal>
+   <FixtureVal ID="4">0,127,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="59" Type="Scene" Name="batch_circle_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,0,2,200,3,90</FixtureVal>
+   <FixtureVal ID="1">0,127,1,94,2,255,3,157</FixtureVal>
+   <FixtureVal ID="2">0,127,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,127,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,255,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="60" Type="Scene" Name="batch_circle_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,0,2,200,3,90</FixtureVal>
+   <FixtureVal ID="1">0,127,1,94,2,255,3,157</FixtureVal>
+   <FixtureVal ID="2">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,127,1,100,2,200,3,100</FixtureVal>
+   <FixtureVal ID="4">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="61" Type="Chaser" Name="batch_circle">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">58</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">59</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">60</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">58</Step>
+   <Step Number="4" FadeIn="0" Hold="1000" FadeOut="0">59</Step>
+   <Step Number="5" FadeIn="0" Hold="1000" FadeOut="0">60</Step>
+  </Function>
+  <Function ID="62" Type="Chaser" Name="circle_fast">
+   <Speed FadeIn="0" FadeOut="0" Duration="100"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">50</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">52</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">53</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">54</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">55</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">56</Step>
+   <Step Number="6" FadeIn="0" Hold="100" FadeOut="0">50</Step>
+   <Step Number="7" FadeIn="0" Hold="100" FadeOut="0">52</Step>
+   <Step Number="8" FadeIn="0" Hold="100" FadeOut="0">53</Step>
+   <Step Number="9" FadeIn="0" Hold="100" FadeOut="0">54</Step>
+   <Step Number="10" FadeIn="0" Hold="100" FadeOut="0">55</Step>
+   <Step Number="11" FadeIn="0" Hold="100" FadeOut="0">56</Step>
+  </Function>
+  <Function ID="63" Type="Chaser" Name="circle_faster">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">50</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">52</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">53</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">54</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">55</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">56</Step>
+   <Step Number="6" FadeIn="0" Hold="50" FadeOut="0">50</Step>
+   <Step Number="7" FadeIn="0" Hold="50" FadeOut="0">52</Step>
+   <Step Number="8" FadeIn="0" Hold="50" FadeOut="0">53</Step>
+   <Step Number="9" FadeIn="0" Hold="50" FadeOut="0">54</Step>
+   <Step Number="10" FadeIn="0" Hold="50" FadeOut="0">55</Step>
+   <Step Number="11" FadeIn="0" Hold="50" FadeOut="0">56</Step>
+  </Function>
+  <Function ID="64" Type="Scene" Name="red_wipe_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,10,1,94,2,255,3,157</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,10,1,100,2,200,3,100</FixtureVal>
+   <FixtureVal ID="4">0,10,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,10,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="65" Type="Scene" Name="red_wipe_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,10,1,100,2,200,3,100</FixtureVal>
+   <FixtureVal ID="4">0,10,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,10,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="66" Type="Scene" Name="red_wipe_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,10,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,10,1,135,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="67" Type="Scene" Name="red_wipe_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,10,1,173,2,179,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,255,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="68" Type="Scene" Name="red_wipe_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,10,1,0,2,90,3,200</FixtureVal>
+   <FixtureVal ID="3">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,255,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="69" Type="Scene" Name="red_wipe_6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,255,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="71" Type="Chaser" Name="red_wipe">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="250" FadeOut="0">64</Step>
+   <Step Number="1" FadeIn="0" Hold="250" FadeOut="0">65</Step>
+   <Step Number="2" FadeIn="0" Hold="250" FadeOut="0">66</Step>
+   <Step Number="3" FadeIn="0" Hold="250" FadeOut="0">67</Step>
+   <Step Number="4" FadeIn="0" Hold="250" FadeOut="0">68</Step>
+   <Step Number="5" FadeIn="0" Hold="250" FadeOut="0">69</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="1500">72</Step>
+  </Function>
+  <Function ID="72" Type="Scene" Name="red_stable">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="1">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="2">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="3">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="4">0,127,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="5">0,127,1,255,2,0,3,0</FixtureVal>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="5" Units="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Button Caption="default lights" ID="1" Icon="">
+    <WindowState Visible="False" X="0" Y="0" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="7"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="6379"/>
+   </Button>
+   <Button Caption="alt_5_6" ID="0" Icon="">
+    <WindowState Visible="False" X="50" Y="0" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="27"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="26485"/>
+   </Button>
+   <Button Caption="countdown" ID="2" Icon="">
+    <WindowState Visible="False" X="100" Y="0" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="24"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="9877"/>
+   </Button>
+   <Button Caption="Test Lights" ID="3" Icon="">
+    <WindowState Visible="False" X="0" Y="750" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="14"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="63141"/>
+   </Button>
+   <Button Caption="environmental" ID="4" Icon="">
+    <WindowState Visible="False" X="145" Y="260" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="41"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="2146"/>
+   </Button>
+   <Button Caption="pop" ID="5" Icon="">
+    <WindowState Visible="False" X="195" Y="260" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="37"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="25248"/>
+   </Button>
+   <Button Caption="pops_2" ID="6" Icon="">
+    <WindowState Visible="False" X="0" Y="350" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="45"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="63942"/>
+   </Button>
+   <Button Caption="front_saturation" ID="7" Icon="">
+    <WindowState Visible="False" X="60" Y="350" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="49"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="47142"/>
+   </Button>
+   <Button Caption="batch_circle" ID="8" Icon="">
+    <WindowState Visible="False" X="5" Y="540" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="61"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="58470"/>
+   </Button>
+   <Button Caption="circle" ID="9" Icon="">
+    <WindowState Visible="False" X="55" Y="540" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="57"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="53291"/>
+   </Button>
+   <Button Caption="circle_fast" ID="10" Icon="">
+    <WindowState Visible="False" X="105" Y="540" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="62"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="30975"/>
+   </Button>
+   <Button Caption="circle_faster" ID="11" Icon="">
+    <WindowState Visible="False" X="155" Y="540" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="63"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="17456"/>
+   </Button>
+   <Button Caption="red_wipe" ID="12" Icon="">
+    <WindowState Visible="False" X="5" Y="645" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="71"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="64300"/>
+   </Button>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
+    <Input Universe="0" Channel="33192"/>
+   </GrandMaster>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
